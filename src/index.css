@@ -6,4 +6,62 @@
 .Sbg{background-color: rgb(239, 244, 255);}
 .Bbg{background-color: rgb(76, 28, 209);color: whitesmoke;}
 .Ibg{color: rgb(78, 24, 228);}
+.Pbg{background-color: rgb(252, 219, 252);}
 .Imgbg{border-color: rgb(76, 28, 209);;}
+.Icontext{color: rgb(74, 18, 229);}
+.Icontext:hover{scale: 1.1;}
+
+::-webkit-scrollbar{
+  width: 0px;
+}
+.Mainbg{
+    background-color: #f4f1ec;
+}
+
+.Ifoc:focus {
+    color: orange;
+}  
+  
+.app-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .notification {
+    position: absolute;
+    top: -60px;
+    right: px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    width: 100px;
+    color: white;
+
+    border-radius: 50%;
+  }
+  
+  .Projects{
+    height: 75vh;
+
+    @media screen and (max-width : 1524px) {
+      height: 75vh;
+    }
+    @media screen and (max-width : 1600px) {
+      height: 75vh;
+    }
+    @media screen and (max-width : 1024px) {
+      height: 90vh;
+    }
+    @media screen and (max-width : 426px) {
+      height: 100vh;
+    }
+  }
+  
+  

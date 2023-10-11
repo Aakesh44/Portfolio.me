@@ -1,6 +1,6 @@
 import React,{useEffect} from 'react'
 import AOS from 'aos';
-import ash from '../src/images/ash.png'
+import newinner from '../src/images/newinner.png'
 
 const Profile = () => {
   useEffect(() => {
@@ -9,15 +9,16 @@ const Profile = () => {
     });
   }, []);
   return (
-    <section className='Sbg bg-slate-50 py-10 flex flex-col md:flex-row md:py-16 mt-10  lg:px-20 xl:px-56'>
-        <div className=' h-full flex justify-center items-center w-full md:w-2/5' data-aos="fade-right"  data-aos-duration="0">
-                <img src={ash} alt="" className='Imgbg lg:h-56 lg:w-56 md:h-44 md:w-44 h-32 w-32  rounded-full border-4 center'/>
-        </div>
-        <div className='px-8 md:w-3/5 lg:px-12 mt-8 md:mt-0 flex flex-col justify-center' data-aos="fade-left" data-aos-duration="1000">
-            <h1 className='Htext text-lg font-bold mb-3 md:text-2xl lg:mb-6 xl:text-3xl text-left px-8 md:px-0'>About me</h1>
-            <p  className=' lg:text-lg  xl:text-xl px-8 md:px-0'>
-                As a committed full-stack web development learner, I have a solid background in web development technologies and am continually looking for ways to improve my skills and knowledge on latest industrial technologies
+    <section  className='Mainbg w-full py-10 flex flex-col md:flex-row md:py-16 mt-10  lg:px-20 xl:px-56'>
+        <div className='px-8 md:w-3/5 lg:px-12 mt-8 md:mt-0 flex flex-col justify-center' data-aos="fade-right" data-aos-duration="1000">
+            <h1 className=' text-amber-500 text-lg font-bold mb-3 md:text-2xl lg:mb-6 xl:text-3xl text-left px-8 md:px-0'>About me</h1>
+            <p  className=' text-sm lg:text-lg  xl:text-xl px-8 md:px-0'>
+              As a MERN stack developer, I have a solid understanding of MERN technologies, and I'm ready to work with passion in your organization. I'm continuously looking for ways to improve my knowledge and skills in web development.
             </p>
+        </div>
+        <div className=' h-full flex justify-center bg-gre en-400 items-center w-full md:w-2/5' data-aos="fade-left"  data-aos-duration="0">
+         
+                <img src={newinner} alt="" className=' lg:h-56 lg:w-56 md:h-44 md:w-44 h-32 w-32 drop-shadow-lg'/>
         </div>
     </section>
   )

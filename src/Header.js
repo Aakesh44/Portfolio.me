@@ -2,7 +2,9 @@ import React, { useState,useEffect } from 'react'
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
 import {Link} from 'react-scroll';
-import Resume from '../src/assets/Resume.pdf'
+import RESUME1 from '../src/assets/RESUMEOpenTurf.pdf'
+import sunglasses from './images/sunglasses.png'
+
 // import {animateScroll as scroll} from 'react-scroll';
 
 
@@ -20,7 +22,7 @@ const Header = () => {
 
   const handleScroll=()=>{
     const currentScroll=window.pageYOffset;
-    const scrollThreshold=window.innerHeight/2;
+    const scrollThreshold=window.innerHeight/8;
 
     setVisible((prevScroll>currentScroll) || currentScroll <scrollThreshold )
     setPreScroll(currentScroll)
@@ -32,28 +34,37 @@ const Header = () => {
       window.removeEventListener('scroll',handleScroll)
     };
   });
+  // 
 
   return (
-    <section className={`Sbg px-8 py-3  md:px-7 md:py-3 lg:px-10 lg:py-4 xl:px-16 xl:py-5 fixed w-full transition duration-300 ease-in-out bg-white z-10 ${visible ? '':'translate-y-[-100%]'}`} >
+    <section  className={`Mainbg w-full shadow-sm fixed  px-8 py-3  md:px-7 md:py-3 lg:px-10 lg:py- xl:px-16 xl:py-  transition duration-300 ease-in-out bg-white z-10 ${visible ? '':'translate-y-[-100%]'}`} >
       <div className=' flex justify-between  items-center mt-3 md:mt-0'>
-        <div className=' mr-auto'>
+        <div className=' h-full  mr-auto'>
           <h1 
             className='Htext cursor-pointer font-bold text-2xl md:text-4xl lg:text-4xl xl:text-4xl'
-            data-aos="fade-right" data-aos-duration="1000">
-              Portfolio
+            >
+              <Link  
+              activeClass='active'
+              to='Home'
+              smooth={true}
+              offset={-70}
+              duration={500}>
+                <img src={sunglasses} alt="" className=' h-10 hover:rotate-180'  />
+              </Link>
           </h1>
+          {/* <img src={logo} alt="" className=' bg-blend-screen'/> */}
         </div>
 
         <p onClick={()=>setActive(!active)}>
           {active===false ?
-            <FiMenu className='Ibg md:hidden h-5 w-5 cursor-pointer'/>
+            <FiMenu className=' text-amber-600 md:hidden h-5 w-5 cursor-pointer'/>
             :
-            <IoCloseSharp className='Ibg md:hidden h-5 w-5 cursor-pointer'/>
+            <IoCloseSharp className=' text-amber-600 md:hidden h-5 w-5 cursor-pointer'/>
           }
         </p>
 
-        <ul className='Htext hidden  md:inline-flex items-center ml-auto text-xl md:text-xl xl:text-2xl lg:font-bold'>
-          <li className=' mx-3 xl:mx-10  cursor-pointer   underline-offset-4' >
+        <ul className=' text-amber-500 hidden  md:inline-flex items-center ml-auto text-xl md:text-xl xl:text-xl lg:font-bold'>
+          <li className=' mx-3 xl:mx-7  cursor-pointer   underline-offset-4' >
             <Link 
               activeClass='active'
               to='Home'
@@ -64,7 +75,7 @@ const Header = () => {
               >Home
             </Link> 
           </li>
-          <li className=' mx-3 xl:mx-10 cursor-pointer'>
+          <li className=' mx-3 xl:mx-7 cursor-pointer'>
             <Link 
               activeClass='active'
               to='Profile'
@@ -74,7 +85,7 @@ const Header = () => {
               duration={500}>Profile
             </Link>
           </li>
-          <li className=' mx-3 xl:mx-10 cursor-pointer'>
+          <li className=' mx-3 xl:mx-7 cursor-pointer'>
             <Link 
               activeClass='active'
               to='Skill'
@@ -84,7 +95,7 @@ const Header = () => {
               duration={1000}>Skills
             </Link>
           </li>
-          <li className=' mx-3 xl:mx-10 cursor-pointer'>
+          <li className=' mx-3 xl:mx-7 cursor-pointer'>
             <Link 
               activeClass='active'
               to='Project'
@@ -94,12 +105,12 @@ const Header = () => {
               duration={1000}>Project
             </Link>
           </li>
-          <li className='Bbg mx-3 rounded xl:mx-10 cursor-pointer text-xl md:text-xl xl:font-normal'>
-            <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <li className=' bg-amber-500 text-white mx-3 rounded xl:mx-7 cursor-pointer text-xl md:text-xl xl:font-normal'>
+            <a href={RESUME1} target="_blank" rel="noopener noreferrer">
 
               <button className=' px-2 py-1'>
                 Resume
-              </button>
+              </button> 
             </a>
           </li>
         </ul>
@@ -107,9 +118,9 @@ const Header = () => {
 
     {active &&
       <div 
-        className='Sbg md:hidden mt-2 flex items-center justify-center bg-white py-4 absolute w-full left-0'
+        className='Mainbg md:hidden mt-2 flex items-center justify-center bg-white py-4 absolute w-full left-0'
         data-aos="fade-right" data-aos-duration="1000">
-        <ul className='Htext text-center'>
+        <ul className=' text-amber-500 text-center'>
           <li className=' mb-3 text-lg cursor-pointer'>
           <Link 
               activeClass='active'
@@ -151,8 +162,8 @@ const Header = () => {
               duration={500}>Project
             </Link>
           </li>
-          <li className='Bbg  rounded  cursor-pointer text-lg '>
-            <a href={Resume} target="_blank" rel="noopener noreferrer">
+          <li className='bg-amber-500 text-white  rounded  cursor-pointer text-lg '>
+            <a href={RESUME1} target="_blank" rel="noopener noreferrer">
 
               <button className=' px-2 py-1'>
                 Resume

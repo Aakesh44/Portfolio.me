@@ -6,10 +6,20 @@ import Profile from './Profile';
 import Skill from './Skill'
 import Project from './Project'
 import Footer from './Footer'
+import { useEffect } from 'react';
+import What from './What';
+import Tech from './Tech';
 
 function App() {
+  useEffect(()=>{
+    document.title="Portfolio"
+    
+  },[])
+  
   return (
-    <div className="App bg-white">
+    <div  className="App  flex flex-col items-center justify-center">
+
+      <div className=''>
 
       <Header/>
 
@@ -20,13 +30,16 @@ function App() {
         <Profile/>
       </section>  
       <section id='Skill'>
+        <Tech/>
         <Skill/>
       </section>
+        <What/>
       <section id='Project'>
         <Project/>
       </section>
 
       <Footer/>
+      </div>
     </div>
   );
 }
