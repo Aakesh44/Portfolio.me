@@ -1,29 +1,36 @@
 {
   "files": {
-    "main.css": "/Portfolio.me/static/css/main.88bb5080.css",
-    "main.js": "/Portfolio.me/static/js/main.567fe66b.js",
+    "main.css": "/Portfolio.me/static/css/main.c018cc55.css",
+    "main.js": "/Portfolio.me/static/js/main.2721edf6.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio.me/static/js/787.1ed0c42c.chunk.js",
     "static/media/ad3.png": "/Portfolio.me/static/media/ad3.36836d1b496f39594909.png",
-    "static/media/p1.png": "/Portfolio.me/static/media/p1.0795341a131df0feb80b.png",
+    "static/media/p11.png": "/Portfolio.me/static/media/p11.73f396a197c93c98704c.png",
     "static/media/ash.png": "/Portfolio.me/static/media/ash.0492f572dd6e0842e7f1.png",
+    "static/media/p13.png": "/Portfolio.me/static/media/p13.82f8e850f8289b9b360d.png",
     "static/media/p2.png": "/Portfolio.me/static/media/p2.44bfcbb2ede7ec5f24ca.png",
+    "static/media/dbmini.png": "/Portfolio.me/static/media/dbmini.2f81ed7ec1fd818da1b5.png",
     "static/media/RESUMEOpenTurf.pdf": "/Portfolio.me/static/media/RESUMEOpenTurf.80c2961b58632ed7f243.pdf",
     "static/media/newinner.png": "/Portfolio.me/static/media/newinner.8fb93d45aa94be230fec.png",
-    "static/media/react.png": "/Portfolio.me/static/media/react.809fed23bcdd686de66e.png",
-    "static/media/cool.png": "/Portfolio.me/static/media/cool.c38d5f79431833fb1bc2.png",
+    "static/media/exmini.png": "/Portfolio.me/static/media/exmini.04e4743fbd704db71ed7.png",
     "static/media/sunglasses.png": "/Portfolio.me/static/media/sunglasses.c54ae5d39d6f9649436c.png",
     "static/media/github.png": "/Portfolio.me/static/media/github.f11021803f68852df283.png",
     "static/media/html-5.png": "/Portfolio.me/static/media/html-5.cfb2ba4a6b1c3de295bc.png",
     "static/media/css-3.png": "/Portfolio.me/static/media/css-3.4a6549b8c2b4cda8bb88.png",
+    "static/media/express.svg": "/Portfolio.me/static/media/express.7e85c5130978e3593e65a44112bc7390.svg",
     "static/media/js.png": "/Portfolio.me/static/media/js.3dfb665e058d08c99f28.png",
-    "static/media/hi.png": "/Portfolio.me/static/media/hi.601bcfdcbe705abe899f.png",
+    "static/media/mongodb.svg": "/Portfolio.me/static/media/mongodb.d89a6eebb2b81e487ffc99f69a3f6ea4.svg",
+    "static/media/reactjs.svg": "/Portfolio.me/static/media/reactjs.e27571eaed899c642345e71163624ef9.svg",
+    "static/media/vscode.svg": "/Portfolio.me/static/media/vscode.f57bbf46dad2409e508cb50781867a39.svg",
+    "static/media/node.svg": "/Portfolio.me/static/media/node.3dc364b8e9beb3561620274aea4f0844.svg",
+    "static/media/redux.svg": "/Portfolio.me/static/media/redux.a95675408ae17c456965e2f09376c31a.svg",
+    "static/media/tailwind.svg": "/Portfolio.me/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
     "index.html": "/Portfolio.me/index.html",
-    "main.88bb5080.css.map": "/Portfolio.me/static/css/main.88bb5080.css.map",
-    "main.567fe66b.js.map": "/Portfolio.me/static/js/main.567fe66b.js.map",
+    "main.c018cc55.css.map": "/Portfolio.me/static/css/main.c018cc55.css.map",
+    "main.2721edf6.js.map": "/Portfolio.me/static/js/main.2721edf6.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio.me/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.88bb5080.css",
-    "static/js/main.567fe66b.js"
+    "static/css/main.c018cc55.css",
+    "static/js/main.2721edf6.js"
   ]
 }
