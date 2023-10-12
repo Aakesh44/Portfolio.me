@@ -17,7 +17,7 @@ function App() {
   },[])
   
   return (
-    <div  className="App  flex flex-col items-center justify-center">
+    <div style={{maxWidth:'100vw'}}  className="App flex flex-col items-center justify-center">
 
       <div className=''>
 

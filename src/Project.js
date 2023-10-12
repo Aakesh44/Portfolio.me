@@ -3,17 +3,19 @@ import p1 from './images/p13.png'
 import p2 from './images/p11.png'
 import p4 from './images/p2.png'
 
-import tailwind from "./images/tailwind.svg";
-import redux from './images/redux.svg'
-import mongodb from './images/dbmini.png'
-import node from './images/node.svg'
-import react from './images/reactjs.svg'
-import express from './images/exmini.png'
 
 import {AiFillGithub} from 'react-icons/ai'
 import {HiArrowTopRightOnSquare} from 'react-icons/hi2'
 
 const Project = () => {
+
+  const Projects = [
+    {title:"Chat App",img:p1,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Chat-app",demo:"https://chatly-rho.vercel.app"},
+    {title:"Music Player",img:p2,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/RYTHMS",demo:"https://rythms-music-player.vercel.app"},
+    {title:"E-commerce",img:p1,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Fake-Store-Client",demo:"https://fake-store-client.vercel.app"},
+    {title:"Car Rental",img:p4,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Go-Drive",demo:"https://aakesh44.github.io/Go-Drive"},
+
+  ]
   return (
     <main className='Mainbg w-full my-10 py-10 lg:px-20 xl:px-56 select-none'>
       <header className=' py-2 mb-4'>
@@ -22,85 +24,35 @@ const Project = () => {
         </h1>
       </header>
 
-      <section className='mt-12 min-w-full md:flex border-b-4 border-white bg-pinksz-400'>
+    
+    {Projects.map((project,ind)=>(
+
+      <section key={ind} className='mt-12 min-w-full md:flex border-b-4 border-white bg-pinksz-400'>
 
           <aside className=' h-72 md:h-96 w-full md:w-3/5 flex items-center justify-center bg-red-3000'>
-              <img src={p1} alt="" className=' h-64 md:h-80 w-11/12 drop-shadow'/>
+              <img src={project.img} alt="" className=' h-64 md:h-80 w-11/12 drop-shadow'/>
           </aside>
 
-          <aside className=' h-72 md:h-96 py-5 md:py-10 w-full flex flex-col md:w-2/5 bg-green-3000'>
-              <h1 className=' text-center text-lg md:text-2xl font-semibold py-8'>Chat App </h1>
+          <aside className=' h-72 md:h-96 md:py-10 w-full flex flex-col md:w-2/5 bg-green-3000'>
+              <h1 className=' text-center text-lg md:text-2xl font-semibold py-8'>{project.title}</h1>
 
               <div className='my-5 w-full bg-yellow-3000 flex flex-wrap justify-around'>
-                <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>React</h1><h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Tailwind css</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Redux</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Express</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Mongo DB</h1>
+                {project.techs.map((tech,ind)=>(
+                  <h1 key={ind} className=' bg-amber-500 text-white rounded-full m-2 px-4 py-1'>{tech}</h1>
+                ))}
               </div>
 
               <footer className='w-full flex items-center justify-around h-20 mt-auto bg-cyan-4000'>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><AiFillGithub            className='h-6 w-6'/></a>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><HiArrowTopRightOnSquare className='h-6 w-6'/></a>
+                  <a href={project.code} target="_blank" rel="noopener noreferrer" className=' bg-amber-400 p-2 md:p-3 rounded-sm'><AiFillGithub            className='h-6 w-6'/></a>
+                  <a href={project.demo} target="_blank" rel="noopener noreferrer" className=' bg-amber-400 p-2 md:p-3 rounded-sm'><HiArrowTopRightOnSquare className='h-6 w-6'/></a>
               </footer>
           </aside>
       </section>
 
-      <section className='mt-12 min-w-full md:flex border-b-4 border-white bg-pinksz-400'>
+    ))}
 
-          <aside className=' h-72 md:h-96 w-full md:w-3/5 flex items-center justify-center bg-red-3000'>
-              <img src={p2} alt="" className=' h-64 md:h-80 w-11/12 drop-shadow'/>
-          </aside>
+ 
 
-          <aside className=' h-72 md:h-96 py-5 md:py-10 w-full flex flex-col md:w-2/5 bg-green-3000'>
-              <h1 className=' text-center text-lg md:text-2xl font-semibold py-8'>Music Player</h1>
-
-              <div className='my-5 w-full bg-yellow-3000 flex flex-wrap justify-around'>
-                <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>React</h1><h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Tailwind css</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Express</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Mongo DB</h1>
-              </div>
-
-              <footer className='w-full flex items-center justify-around h-20 mt-auto bg-cyan-4000'>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><AiFillGithub            className='h-6 w-6'/></a>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><HiArrowTopRightOnSquare className='h-6 w-6'/></a>
-              </footer>
-          </aside>
-      </section>
-
-      <section className='mt-12 min-w-full md:flex border-b-4 border-white bg-pinksz-400'>
-
-          <aside className=' h-72 md:h-96 w-full md:w-3/5 flex items-center justify-center bg-red-3000'>
-              <img src={p1} alt="" className=' h-64 md:h-80 w-11/12 drop-shadow'/>
-          </aside>
-
-          <aside className=' h-72 md:h-96 py-5 md:py-10 w-full flex flex-col md:w-2/5 bg-green-3000'>
-              <h1 className=' text-center text-lg md:text-2xl font-semibold py-8'>E-commerce </h1>
-
-              <div className='my-5 w-full bg-yellow-3000 flex flex-wrap justify-around'>
-                <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>React</h1><h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Tailwind css</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Express</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Mongo DB</h1>
-              </div>
-
-              <footer className='w-full flex items-center justify-around h-20 mt-auto bg-cyan-4000'>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><AiFillGithub            className='h-6 w-6'/></a>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><HiArrowTopRightOnSquare className='h-6 w-6'/></a>
-              </footer>
-          </aside>
-      </section>
-
-      <section className='mt-12 min-w-full md:flex border-b-4 border-white bg-pinksz-400'>
-
-          <aside className=' h-72 md:h-96 w-full md:w-3/5 flex items-center justify-center bg-red-3000'>
-              <img src={p4} alt="" className=' h-64 md:h-80 w-11/12 drop-shadow'/>
-          </aside>
-
-          <aside className=' h-72 md:h-96 py-5 md:py-10 w-full flex flex-col md:w-2/5 bg-green-300'>
-              <h1 className=' text-center text-lg md:text-2xl font-semibold py-8'>Car Rental </h1>
-
-              <div className='my-5 w-full bg-yellow-3000 flex flex-wrap justify-around'>
-                <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>React</h1><h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Tailwind css</h1><h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Redux</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Express</h1> <h1 className=' bg-fuchsia-600 text-white rounded-full m-2 px-3 '>Mongo DB</h1>
-              </div>
-
-              <footer className='w-full flex items-center justify-around h-20 mt-auto bg-cyan-4000'>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><AiFillGithub            className='h-6 w-6'/></a>
-                  <a href="#" className=' bg-fuchsia-300 p-2 rounded-sm'><HiArrowTopRightOnSquare className='h-6 w-6'/></a>
-              </footer>
-          </aside>
-      </section>
     </main>
   )
 }

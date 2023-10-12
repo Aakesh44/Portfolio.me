@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.App{min-height: 100vh;width: 100%;display: flex;flex-direction: column;transition: all 0.3s ease-in-out;}
+.App{min-height: 100vh;width: 100vw;display: flex;flex-direction: column;transition: all 0.3s ease-in-out;}
 .Htext{color: rgb(76, 28, 209);}
 .Sbg{background-color: rgb(239, 244, 255);}
 .Bbg{background-color: rgb(76, 28, 209);color: whitesmoke;}
@@ -46,6 +46,9 @@
 
     border-radius: 50%;
   }
+
+
+
   
   .Projects{
     height: 75vh;

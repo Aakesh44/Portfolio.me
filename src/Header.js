@@ -37,7 +37,7 @@ const Header = () => {
   // 
 
   return (
-    <section  className={`Mainbg w-full shadow-sm fixed  px-8 py-3  md:px-7 md:py-3 lg:px-10 lg:py- xl:px-16 xl:py-  transition duration-300 ease-in-out bg-white z-10 ${visible ? '':'translate-y-[-100%]'}`} >
+    <section style={{maxWidth:'100vw'}}  className={`Mainbg w-full shadow-sm fixed  px-8 py-3  md:px-7 md:py-3 lg:px-10 lg:py- xl:px-16 xl:py-  transition duration-300 ease-in-out bg-white z-10 ${visible ? '':'translate-y-[-100%]'}`} >
       <div className=' flex justify-between  items-center mt-3 md:mt-0'>
         <div className=' h-full  mr-auto'>
           <h1 
