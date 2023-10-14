@@ -1,6 +1,7 @@
 import React from 'react'
-import p1 from './images/p13.png'
+import p1 from './images/p-chat.png'
 import p2 from './images/p11.png'
+import p3 from './images/p13.png'
 import p4 from './images/p2.png'
 
 
@@ -12,7 +13,7 @@ const Project = () => {
   const Projects = [
     {title:"Chat App",img:p1,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Chat-app",demo:"https://chatly-rho.vercel.app"},
     {title:"Music Player",img:p2,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/RYTHMS",demo:"https://rythms-music-player.vercel.app"},
-    {title:"E-commerce",img:p1,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Fake-Store-Client",demo:"https://fake-store-client.vercel.app"},
+    {title:"E-commerce",img:p3,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Fake-Store-Client",demo:"https://fake-store-client.vercel.app"},
     {title:"Car Rental",img:p4,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Go-Drive",demo:"https://aakesh44.github.io/Go-Drive"},
 
   ]
