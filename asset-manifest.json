@@ -1,12 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio.me/static/css/main.383bc29d.css",
-    "main.js": "/Portfolio.me/static/js/main.9437fd5d.js",
+    "main.css": "/Portfolio.me/static/css/main.1a12747c.css",
+    "main.js": "/Portfolio.me/static/js/main.7a8f7800.js",
     "static/js/787.1ed0c42c.chunk.js": "/Portfolio.me/static/js/787.1ed0c42c.chunk.js",
     "static/media/ad3.png": "/Portfolio.me/static/media/ad3.36836d1b496f39594909.png",
     "static/media/p11.png": "/Portfolio.me/static/media/p11.73f396a197c93c98704c.png",
     "static/media/ash.png": "/Portfolio.me/static/media/ash.0492f572dd6e0842e7f1.png",
     "static/media/p13.png": "/Portfolio.me/static/media/p13.82f8e850f8289b9b360d.png",
+    "static/media/p-chat.png": "/Portfolio.me/static/media/p-chat.5117032626e44efed77e.png",
     "static/media/p2.png": "/Portfolio.me/static/media/p2.44bfcbb2ede7ec5f24ca.png",
     "static/media/RESUMEOpenTurf.pdf": "/Portfolio.me/static/media/RESUMEOpenTurf.80c2961b58632ed7f243.pdf",
     "static/media/newinner.png": "/Portfolio.me/static/media/newinner.8fb93d45aa94be230fec.png",
@@ -27,12 +28,12 @@
     "static/media/tailwind.svg": "/Portfolio.me/static/media/tailwind.50fbcf516b9a3774e9a83272167059ae.svg",
     "static/media/nextjs-3.svg": "/Portfolio.me/static/media/nextjs-3.7ab4af8b9013aae4503ab977efbd297e.svg",
     "index.html": "/Portfolio.me/index.html",
-    "main.383bc29d.css.map": "/Portfolio.me/static/css/main.383bc29d.css.map",
-    "main.9437fd5d.js.map": "/Portfolio.me/static/js/main.9437fd5d.js.map",
+    "main.1a12747c.css.map": "/Portfolio.me/static/css/main.1a12747c.css.map",
+    "main.7a8f7800.js.map": "/Portfolio.me/static/js/main.7a8f7800.js.map",
     "787.1ed0c42c.chunk.js.map": "/Portfolio.me/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.383bc29d.css",
-    "static/js/main.9437fd5d.js"
+    "static/css/main.1a12747c.css",
+    "static/js/main.7a8f7800.js"
   ]
 }
