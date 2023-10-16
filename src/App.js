@@ -11,10 +11,10 @@ import What from './What';
 import Tech from './Tech';
 
 function App() {
-  useEffect(()=>{
-    document.title="Portfolio"
+  // useEffect(()=>{
+  //   document.title="Portfoli0o"
     
-  },[])
+  // },[])
   
   return (
     <div style={{maxWidth:'100vw'}}  className="App flex flex-col items-center justify-center">

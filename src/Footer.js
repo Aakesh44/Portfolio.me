@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <section className='Mainbg bg-b lue-400 w-full text-amber-500 h-96 flex items-center justify-evenly'>
         <h1 className='text-center font-bold text-2xl flex items-center justify-center'>
-          Made by  <AiFillHeart/> Aakesh
+          Made by  <AiFillHeart className='mx-2'/> Aakesh
         </h1>
 
 

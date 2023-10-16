@@ -13,10 +13,10 @@ const Home=()=>{
 
     const socialmedia=[
 
-        {link:"https://www.linkedin.com/in/aakesh44/",icon:<AiOutlineLinkedin className="text-amber-400 hover:scale-105 drop-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
-        {link:"https://www.instagram.com/aakesh_rex/",icon:<AiOutlineInstagram className="text-amber-400 hover:scale-105 drop-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
-        {link:"https://github.com/Aakesh44",icon:<AiOutlineGithub className="text-amber-400 hover:scale-105 drop-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
-        {link:"mailto:aakeshviswanathan@gmail.com",icon:<AiOutlineMail className="text-amber-400 hover:scale-105 drop-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
+        {link:"https://www.linkedin.com/in/aakesh44/",icon:<AiOutlineLinkedin className="text-amber-500 hover:scale-105 drop.-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
+        {link:"https://www.instagram.com/aakesh_rex/",icon:<AiOutlineInstagram className="text-amber-500 hover:scale-105 drop.-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
+        {link:"https://github.com/Aakesh44",icon:<AiOutlineGithub className="text-amber-500 hover:scale-105 drop.-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
+        {link:"mailto:aakeshviswanathan@gmail.com",icon:<AiOutlineMail className="text-amber-500 hover:scale-105 drop.-shadow cursor-pointer xl:h-8 xl:w-8 lg:h-7 lg:w-7  h-8 w-8"/>},
 
     ]
     

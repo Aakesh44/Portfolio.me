@@ -17,6 +17,7 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+document.title = "Potfolio"
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

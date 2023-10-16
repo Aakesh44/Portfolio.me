@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
 import {Link} from 'react-scroll';
-import RESUME1 from '../src/assets/RESUMEOpenTurf.pdf'
+import RESUME1 from '../src/assets/resume.pdf'
 import sunglasses from './images/sunglasses.png'
 
 // import {animateScroll as scroll} from 'react-scroll';
@@ -163,7 +163,7 @@ const Header = () => {
             </Link>
           </li>
           <li className='bg-amber-500 text-white  rounded  cursor-pointer text-lg '>
-            <a href={RESUME1} target="_blank" rel="noopener noreferrer">
+            <a href="https://drive.google.com/file/d/1zdcbdDrLteIBiKpVT-l9OjUL62IQGdKI/view" target="_blank" rel="noopener noreferrer">
 
               <button className=' px-2 py-1'>
                 Resume

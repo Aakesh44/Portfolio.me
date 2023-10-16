@@ -56,7 +56,7 @@ const Skill = () => {
 
             <img src={icon.img} onMouseOver={()=>setPopUp(icon.name)} onMouseLeave={()=>setPopUp(null)} alt="" className=' h-2/5 relative aspect-square drop-shadow-xl'/>
 
-            {popuptext === icon.name && <span className=' absolute transition top-1 text-sm font-medium bg-amber-500 p-1 px-2 text-white rounded-md'>
+            {popuptext === icon.name && <span className=' absolute transition -top-1 md:top-1 text-sm font-medium bg-amber-500 p-1 px-2 text-white rounded-md'>
               {icon.name}
               <div className=' absolute right-1/2 translate-x-1/2 h-2 w-2 rotate-45 bg-amber-500'></div>
             </span> }
