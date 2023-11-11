@@ -2,7 +2,7 @@ import React, { useState,useEffect } from 'react'
 import { FiMenu } from "react-icons/fi";
 import { IoCloseSharp } from "react-icons/io5";
 import {Link} from 'react-scroll';
-import RESUME1 from '../src/assets/resume.pdf'
+import RESUME1 from '../src/assets/full-stack.pdf'
 import sunglasses from './images/sunglasses.png'
 
 // import {animateScroll as scroll} from 'react-scroll';

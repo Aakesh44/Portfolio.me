@@ -1,8 +1,9 @@
 import React from 'react'
 import p1 from './images/p-chat.png'
 import p2 from './images/p11.png'
-import p3 from './images/p13.png'
+import p3 from './images/p4.png'
 import p4 from './images/p2.png'
+import p5 from './images/p13.png'
 
 
 import {AiFillGithub} from 'react-icons/ai'
@@ -13,10 +14,31 @@ const Project = () => {
   const Projects = [
     {title:"Chat App",img:p1,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Chat-app",demo:"https://chatly-rho.vercel.app"},
     {title:"Music Player",img:p2,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/RYTHMS",demo:"https://rythms-music-player.vercel.app"},
-    {title:"E-commerce",img:p3,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Fake-Store-Client",demo:"https://fake-store-client.vercel.app"},
-    {title:"Car Rental",img:p4,techs:["React","Tailwind css","Redux","Express","Mongo DB"],code:"https://github.com/Aakesh44/Go-Drive",demo:"https://aakesh44.github.io/Go-Drive"},
+    {title:"E-commerce",img:p3,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Thinsil-assignment",demo:"https://aakesh44.github.io/Thinsil-assignment"},
+    {title:"Car Rental",img:p4,techs:["React","Tailwind css","Redux"],code:"https://github.com/Aakesh44/Go-Drive",demo:"https://aakesh44.github.io/Go-Drive"},
+    {title:"E-commerce",img:p5,techs:["React","Tailwind css","Express","Mongo DB"],code:"https://github.com/Aakesh44/Fake-Store-Client",demo:"https://fake-store-client.vercel.app"},
 
   ]
+
+ {/*
+
+ 1) Portfolio : https://aakesh44.github.io/Portfolio.me
+
+2)Chat App 
+code: https://github.com/Aakesh44/Chat-app ,
+demo: https://chatly-rho.vercel.app 
+
+3)Music Player
+code: https://github.com/Aakesh44/RYTHMS ,
+demo: https://rythms-music-player.vercel.app
+
+4) E-commerce website
+code: https://github.com/Aakesh44/Fake-Store-Client ,
+demo: https://fake-store-client.vercel.app 
+
+
+
+*/}
   return (
     <main className='Mainbg w-full my-10 py-10 lg:px-20 xl:px-56 select-none'>
       <header className=' py-2 mb-4'>

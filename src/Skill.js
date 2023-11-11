@@ -31,15 +31,15 @@ const Skill = () => {
     {img:html,name:"HTML"},
     {img:css,name:"CSS"},
     {img:js,name:"Java Script"},
-    {img:tailwind,name:"tailwind css"},
-    // {img:typescript,name:"TypeScript"},
+    {img:typescript,name:"TypeScript"},
     // {img:nextjs,name:"Next js"},
+    {img:tailwind,name:"tailwind css"},
     {img:redux,name:"Redux"},
     {img:mongoose,name:"Mongoose"},
     {img:github,name:"Git hub"},
     {img:npm,name:"npm"},
     {img:postman,name:"Postman"},
-    {img:vscode,name:"VS code"},
+    // {img:vscode,name:"VS code"},
 ]
 
   const [popuptext,setPopUp] = useState(null)
