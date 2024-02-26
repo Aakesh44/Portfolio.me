@@ -1,4 +1,3 @@
-// import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
 import Header from './Header';
@@ -12,7 +11,7 @@ import Tech from './Tech';
 
 function App() {
   // useEffect(()=>{
-  //   document.title="Portfoli0o"
+  //   document.title="Portfolio"
     
   // },[])
   
