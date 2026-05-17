@@ -16,10 +16,10 @@ const About = () => {
             <PanelContent className='font-mono space-y-4'>
 
                 {USER.about.map(sentence => (
-                    <TextWithLinks key={sentence} text={sentence}/>
+                    <TextWithLinks key={sentence} text={sentence} />
                 ))}
 
-                <Spotify/>
+                {/* <Spotify /> */}
             </PanelContent>
         </Panel>
     );

@@ -39,7 +39,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   },
   {
     title: "Resume",
-    href: "https://drive.google.com/file/d/1blgk-9Dxtpi_Sc_oLxv69ql52sIGo5I7/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1KvCjX5HAXsrD1bUtZzdGpKHMHHEwjJm4/view?usp=sharing",
     icon: FileText,
     openInNewTab: true
   }

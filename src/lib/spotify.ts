@@ -5,7 +5,7 @@ const client_secret = process.env.SPOTIFY_CLIENT_SECRET!;
 const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN!;
 
 const TOKEN_ENDPOINT = "https://accounts.spotify.com/api/token";
-const NOW_PLAYING_ENDPOINT = "https://api.spotify.com/v1/me/player/currently-playing";
+const NOW_PLAYING_ENDPOINT = "https://api.spotify.com/v1/me/player";
 
 const basic = Buffer.from(`${client_id}:${client_secret}`).toString("base64");
 
@@ -23,18 +23,21 @@ const getAccessToken = async (): Promise<string> => {
     }),
   });
 
+
   const data = await response.json();
+
+  console.log("⚠️ Spotify token response", response.status, data);
 
   return data.access_token;
 };
 
 export const getNowPlaying = async () => {
 
-    const access_token = await getAccessToken();
+  const access_token = await getAccessToken();
 
-    return fetch(NOW_PLAYING_ENDPOINT, {
-      headers: {
-        Authorization: `Bearer ${access_token}`,
-      },
-    });
+  return fetch(NOW_PLAYING_ENDPOINT, {
+    headers: {
+      Authorization: `Bearer ${access_token}`,
+    },
+  });
 };

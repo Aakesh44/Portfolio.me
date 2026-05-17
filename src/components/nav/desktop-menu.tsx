@@ -1,48 +1,48 @@
 "use client";
 
 import React from 'react';
-import {MAIN_NAV} from '@/config/site';
+import { MAIN_NAV } from '@/config/site';
 import { usePathname } from 'next/navigation';
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 
 const DesktopMenu = () => {
 
-    const pathname = usePathname();
-    return (
-        <Nav items={MAIN_NAV} activePathname={pathname} className='max-sm:hidden'/>
-    );
+  const pathname = usePathname();
+  return (
+    <Nav items={MAIN_NAV} activePathname={pathname} className='max-sm:hidden' />
+  );
 };
 
 const Nav = ({
-    items,
-    activePathname,
-    className
-}:{
-    items: typeof MAIN_NAV,
-    activePathname?: string | null,
-    className?: string
+  items,
+  activePathname,
+  className
+}: {
+  items: typeof MAIN_NAV,
+  activePathname?: string | null,
+  className?: string
 }) => {
-    return (
-        <nav className={cn('flex items-center gap-6', className)}>
+  return (
+    <nav className={cn('flex items-center gap-6', className)}>
 
-            {items.map(({title, href, openInNewTab}) => {
+      {items.map(({ title, href, openInNewTab }) => {
 
-                const isActive = activePathname === href || (href !== '/' && activePathname?.startsWith(href));
+        const isActive = activePathname === href || (href !== '/' && activePathname?.startsWith(href));
 
-                return (
-                    <NavItem
-                        key={href}
-                        href={href}
-                        active={isActive}
-                        openInNewTab={openInNewTab}
-                    >
-                        {title}
-                    </NavItem>
-                )
-            })}
-        </nav>
-    )
+        return (
+          <NavItem
+            key={href}
+            href={href}
+            active={isActive}
+            openInNewTab={openInNewTab}
+          >
+            {title}
+          </NavItem>
+        )
+      })}
+    </nav>
+  )
 };
 
 export function NavItem({
@@ -63,7 +63,7 @@ export function NavItem({
     active && "text-foreground"
   );
 
-  if(isExtenal) {
+  if (isExtenal) {
     return (
       <a
         href={href}

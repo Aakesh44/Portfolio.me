@@ -1,5 +1,6 @@
 import { Project } from "@/types/types";
 import thinsil from "@/assets/images/thinsil2.png";
+import starli from "@/assets/images/starli.png";
 
 export const PROJECTS: Project[] = [
     {
@@ -8,9 +9,9 @@ export const PROJECTS: Project[] = [
         period: { start: "2026" },
         link: "https://starli-io.vercel.app/",
         techstack: ["Next.js", "TypeScript", "React Query", "Zustand", "Express.js", "MongoDB"],
-        logo: thinsil,
+        logo: starli,
         description: [
-            "An Social Networking platform for developers to share their projects, connect with other developers, and get feedback on their work."
+            "An Social Media Platform for tech enthusiasts to share their ideas, projects, and insights. It fosters a vibrant community where users can connect, collaborate, and stay updated on the latest trends in technology."
         ],
         isExpanded: true
     },

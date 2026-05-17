@@ -5,6 +5,8 @@ export async function GET() {
 
   const response = await getNowPlaying();
 
+  console.log("⚠️ Spotify now playing response", response);
+
   if (response.status === 204 || response.status > 400) {
     return NextResponse.json({ isPlaying: false });
   }
@@ -17,7 +19,7 @@ export async function GET() {
 
   const isPlaying = song.is_playing;
   const title = song.item.name;
-  const artist = song.item.artists.map((a: {name: string}) => a.name).join(", ");
+  const artist = song.item.artists.map((a: { name: string }) => a.name).join(", ");
   const album = song.item.album.name;
   const albumImageUrl = song.item.album.images[0].url;
   const songUrl = song.item.external_urls.spotify;
@@ -33,7 +35,7 @@ export async function GET() {
     title,
     progress_ms,
     duration_ms
-  },{
+  }, {
     headers: {
       "Cache-Control": "no-store",
     }
